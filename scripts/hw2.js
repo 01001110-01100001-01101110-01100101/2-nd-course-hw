@@ -47,4 +47,4 @@ let info = prompt("Какую информацию хотите узнать о 
 alert(user[info]);
 
 let name = prompt("Введите свое имя:)");
-alert(`Привет, ${name}!`);\
+alert(`Привет, ${name}!`);

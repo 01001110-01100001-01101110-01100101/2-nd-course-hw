@@ -58,7 +58,7 @@ const first = [
  [1, 2, 3],
  [4, 5, 6],
 ];
-let flat = first.flat()
+let flat = first.flat();
 console.log(flat);
 
 
@@ -69,4 +69,29 @@ for (let index = 0; index < random.length - 1; index++) {
     
 }
 
-/* 11, 12, 13*/
+
+const z = [45, 3, 50, -12, 0];
+const square = z.map(el => el * el);
+console.log(square);
+
+
+const getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква']; 
+const newArray = [];
+for (let i = 0; i < getLengthWords.length; i++) {
+    newArray.push(getLengthWords[i].length);
+}
+console.log(newArray);
+    
+
+/*13
+const negative = [];
+function filterPositive(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (filterPositive(array[i]) < 0) {
+            negative.push()
+        }
+    }
+}
+filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
+filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+*/

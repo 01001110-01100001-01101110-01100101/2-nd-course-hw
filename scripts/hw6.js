@@ -83,15 +83,13 @@ for (let i = 0; i < getLengthWords.length; i++) {
 console.log(newArray);
     
 
-/*13
-const negative = [];
 function filterPositive(array) {
+    const neg = []; //кладём массив внутрь функции
     for (let i = 0; i < array.length; i++) {
-        if (filterPositive(array[i]) < 0) {
-            negative.push()
-        }
+        if (array[i] < 0) {   // проверяем каждый элемент
+        neg.push(array[i]); // не забываем прописывать, что именно мы пушим
     }
+    }
+    return neg; // и возвращаем отсюда массив
 }
-filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
-filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
-*/
+console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10] // консолим, чтобы увидеть результат

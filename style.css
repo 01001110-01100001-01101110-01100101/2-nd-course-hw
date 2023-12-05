@@ -8,8 +8,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 a {
@@ -121,12 +121,138 @@ a {
     background-size: cover;
 }
 
+.game-box {
+    background: #000915;
+}
+.game-box3 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(pic/riddles_bg.jpg), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.seasons  {
+    display: flex;
+    padding-top: 234px;
+    padding-bottom: 234px;
+    gap: 135px;
+}
+.words  {
+    display: flex;
+    padding-top: 239px;
+    padding-bottom: 239px;
+    gap: 135px;
+}
+.riddles  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: 800px;
+}
+.riddles_text {
+    text-align: center;
+}
+
+.game_info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.game_name {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.game_text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.game_link {
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+    border: 1px solid #9C0332;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234px;
+    height: 48px;
+    transition: all 0.7s ease 0s;
+}
+.game_link:hover {
+    background: #EB443F;
+}
+
+.footer {
+    background: #000915;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer_text {
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+/* tablet ver */
+@media (max-width: 1300px) {
+    .center {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+    .games {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .seasons  {
+        gap: 48px;
+    }
+    .words  {
+        gap: 48px;  
+    }
+}
+@media (max-width: 876px) {
+    .pic_seasons {
+        width: 344px;
+        height: 236px;
+    }
+    .pic_words {
+        width: 344px;
+        height: 231px;
+    }
+}
+
+
+
+
 /* mobile ver */
 @media (max-width: 767px) {
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     .welcome_title {
         text-align:center;
         font-size: 32px;
@@ -140,10 +266,10 @@ a {
         display: flex;
         justify-content: center;
     }
-    .welcome_linl-box {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    .welcome_link-box {
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
     .games {
         flex-wrap: wrap;
@@ -152,25 +278,53 @@ a {
     .game {
         min-width: 343px;
     }
-
+    .seasons {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64px;
+    }
+    .words {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64px;
+    }
+    .riddles  {
+        padding-top: 51px;
+        justify-content: flex-start;
+    }
+    .game_info {
+        align-items: center;
+        text-align: center;
+    }
+    .game_name {
+    font-size: 32px;
+    }
+    .game_text {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 @media (max-width: 375px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .welcome_text {
         line-height: 20px;
     }
     .game {
         min-width: 295px;
     }
-}
-
-/* tablet ver */
-@media (max-width: 1300px) {
-    .center {
-        padding-left: 38px;
-        padding-right: 38px;
+    .pic_seasons {
+        width: 206.4px;
+        height: 141.6px;
     }
-    .games {
-        flex-wrap: wrap;
-        justify-content: center;
+    .pic_words {
+        width: 206.4px;
+        height: 138.6px;
     }
 }

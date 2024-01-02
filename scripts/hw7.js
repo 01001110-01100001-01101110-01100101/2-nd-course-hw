@@ -73,7 +73,6 @@ console.log(futureDate.toDateString());
 const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-
 let myDate = new Date(); 
 let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()]; 
 

@@ -16,6 +16,7 @@ const month = (num) => {
     }
 };
 
+
 function guessWords() {
     let words = [
     "Яблоко",

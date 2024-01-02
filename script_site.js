@@ -15,3 +15,30 @@ const month = (num) => {
         alert("Вы ввели неправильное значение");
     }
 };
+
+function guessWords() {
+    let words = [
+    "Яблоко",
+    "Груша",
+    "Дыня",
+    "Виноград",
+    "Персик",
+    "Апельсин",
+    "Мандарин",
+    ];
+    words = words.sort(() => Math.random() - 0.5);
+    alert(words);
+    const answerFirstEl = prompt("Чему равнялся первый элемент массива?");
+    const answerLastEl = prompt("Чему равнялся последний элемент массива?");
+    if (answerFirstEl.toLowerCase() === words[0].toLowerCase() && answerLastEl.toLowerCase() === words[6].toLowerCase()) {
+        alert('Поздравляю! Вы прошли игру!');
+    }
+    else if (answerFirstEl.toLowerCase() !== words[0].toLowerCase() && answerLastEl.toLowerCase() !== words[6].toLowerCase()) {
+        alert('Неверно. Попробуйте снова.');
+    }
+    else {
+        alert('Вы были близки к победе');
+    };
+}
+
+

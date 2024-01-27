@@ -16,6 +16,7 @@
 //     return 0;
 // }));
 
+
 // Задание 2
 // function isPositive(number) {
 //     return number > 0;
@@ -32,7 +33,6 @@
 //     }
 //     return output;
 // }
-
 // console.log(filter([3, -4, 1, 9], isPositive)); 
 
 // const people = [
@@ -41,11 +41,11 @@
 //    {name: 'Олег', gender: 'male'},
 //    {name: 'Оксана', gender: 'female'}
 // ];
-
 // console.log(filter(people, isMale)); 
 
+
 // Задание 3 
-// const date = (Date) => {
+// const date = () => {
 //     let currentDate = new Date();
 //     let interval = setInterval(() => console.log(currentDate), 3000);
 //     setTimeout(() => {
@@ -53,44 +53,32 @@
 //         console.log("30 секунд прошло!");
 //     }, 30000);
 // }
-
-// Задание 4
-function delayForSecond(callback) {
-    // Код писать можно только внутри этой функции
-    callback();
-}
-
-delayForSecond(function () {
-    console.log("Привет, Глеб!");
-});
+// date()
 
 
+//Задание 4
+// function delayForSecond(callback) {
+//     setTimeout(() => {
+//     callback();
+//     }, 1000);
+// }
 
+// delayForSecond(function () {
+//     console.log("Привет, Глеб!");
+// });
 
 
 // Задание 5
-
-
-
-// const timer = (deadline) => {
-//     if (isNaN(+deadline)) {
-//         // + − приводим значение к number, если это NaN,
-//         console.log("Передано некорректное число"); // выводим сообщение
-//         return; // выходим из функции
-//     }
-    
-//     let time = deadline;
-//     console.log(time);
-//     const interval = setInterval(() => {
-//         time -= 1;
-//         console.log(time);
-//     }, 1000);
-
+// function delayForSecond(cb) {
 //     setTimeout(() => {
-//         clearInterval(interval);
-//         console.log("Время истекло!");
-//     }, deadline * 1000);
-// };
+//         console.log('Прошла одна секунда');
+// 				if(cb) { 	cb(); }
 
-// const deadline = prompt("На сколько секунд вы хотите поставить таймер?");
-// timer(deadline);
+//     }, 1000)
+// }
+
+// function sayHi (name) {
+//     console.log(`Привет, ${name}!`);
+// }
+
+// delayForSecond(() => sayHi('Глеб'));
